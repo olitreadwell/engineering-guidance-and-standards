@@ -25,6 +25,7 @@
 - 2026-08-05 docs/broken-link — outcome: skipped-no-genuine-doc-fix — 138 links verified clean; well-maintained; also requires signed commits.
 - 2026-08-26 self-found — outcome: blocked-needs-signing — CONTRIBUTING.md requires fully signed commit history (SEGAS-00009); no signing key, must not register one to Oli's account.
 - 2026-09-03 self-found — outcome: blocked-needs-signing — re-verified live: CONTRIBUTING.md still requires fully signed commit history to merge into main; no gpg binary, no ssh keys, no signing key in env; must not register one to Oli's account. Unlocks only if Oli registers a signing key on his GitHub account.
+- 2026-09-04 trivial-fix pass (loop-trivial) — outcome: blocked-needs-signing — re-verified live: upstream main still @ 66cd84a, CONTRIBUTING.md still requires a fully signed commit history to merge into main (SEGAS-00009); env has no gpg/ssh binary, no signing key, and must not register one to Oli's account. No PR opened (honest stop, no invented work).
 
 ## Mined gaps (discovered, not yet attempted)
 - none — repo is a hard blocker (signed commits) until Oli registers a signing key.
