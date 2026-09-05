@@ -1,5 +1,5 @@
 # UKHomeOffice/engineering-guidance-and-standards context
-> refreshed 2026-09-03 | upstream default: main @ 66cd84a
+> refreshed 2026-09-05 | upstream default: main @ 66cd84a
 
 ## Identity & policies
 - upstream: UKHomeOffice/engineering-guidance-and-standards, default branch main, primary language JavaScript (Jekyll/Liquid docs site), English-first (UK English).
@@ -26,6 +26,8 @@
 - 2026-08-26 self-found — outcome: blocked-needs-signing — CONTRIBUTING.md requires fully signed commit history (SEGAS-00009); no signing key, must not register one to Oli's account.
 - 2026-09-03 self-found — outcome: blocked-needs-signing — re-verified live: CONTRIBUTING.md still requires fully signed commit history to merge into main; no gpg binary, no ssh keys, no signing key in env; must not register one to Oli's account. Unlocks only if Oli registers a signing key on his GitHub account.
 - 2026-09-04 trivial-fix pass (loop-trivial) — outcome: blocked-needs-signing — re-verified live: upstream main still @ 66cd84a, CONTRIBUTING.md still requires a fully signed commit history to merge into main (SEGAS-00009); env has no gpg/ssh binary, no signing key, and must not register one to Oli's account. No PR opened (honest stop, no invented work).
+
+- 2026-09-05 self-found (loop.sh single-contribution cycle) — outcome: blocked-needs-signing — re-verified live against current upstream main (66cd84a): CONTRIBUTING.md still requires a fully signed commit history to merge into main (SEGAS-00009 "Signing code commits"; "You will not be able to merge the resulting PR if any commits in the associated branch are unsigned, or if the signatures can't be verified by GitHub"). Env has no gpg/gpg2 binary, no ssh/ssh-add, no ~/.gnupg, no ~/.ssh, no user.signingkey/commit.gpgsign; must NOT register a signing key to Oli's account (config known_blockers.signed_commits). Cannot produce a genuine, signed, mergeable contribution; hard-skipped per critical filter. No PR opened (honest stop, no invented work). Unlocks only if Oli registers a GPG/SSH signing key on his GitHub account.
 
 ## Mined gaps (discovered, not yet attempted)
 - none — repo is a hard blocker (signed commits) until Oli registers a signing key.
