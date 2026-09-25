@@ -1,5 +1,5 @@
 # UKHomeOffice/engineering-guidance-and-standards context
-> refreshed 2026-09-24 | upstream default: main @ 886ef0d
+> refreshed 2026-09-25 | upstream default: main @ 886ef0d
 
 ## Identity & policies
 - upstream: UKHomeOffice/engineering-guidance-and-standards, default branch main, primary language JavaScript (Jekyll/Liquid docs site), English-first (UK English).
@@ -33,6 +33,8 @@
 - 2026-09-09 trivial-fix pass (loop-trivial) — outcome: blocked-needs-signing — re-verified live (main @ 66cd84a, unchanged); no signing key in env; must not register one to Oli's account. No PR opened.
 
 - 2026-09-24 self-found (loop.sh single-contribution cycle, ANY repo type) — outcome: blocked-needs-signing — re-verified live against current upstream CONTRIBUTING.md (main moved to 886ef0d): repo still requires a fully signed commit history to merge into main (SEGAS-00009 "Signing code commits"; "You will not be able to merge the resulting PR if any commits in the associated branch are unsigned, or if the signatures can't be verified by GitHub"). Env has no secret GPG keys (0 'sec'), no ~/.ssh, no user.signingkey, no commit.gpgsign; MUST NOT register a signing key to Oli's account (config known_blockers.signed_commits + preflight_scan.critical_filters_hard_skip.signed_commits_required). No maintainer-engaged open issue survives (newest BUG issues #741-744 are uncommented). Cannot produce a genuine, signed, mergeable contribution; hard-skipped per critical filter. No PR opened (honest stop, no invented work). Unlocks only if Oli registers a GPG/SSH signing key on his GitHub account.
+
+- 2026-09-25 trivial-fix pass (loop-trivial, ANY repo type) — outcome: blocked-needs-signing — re-verified live 2026-09-25 against current upstream CONTRIBUTING.md (main unchanged @ 886ef0d): repo still requires a fully signed commit history to merge into main (SEGAS-00009 "Signing code commits"; "You will not be able to merge the resulting PR if any commits in the associated branch are unsigned, or if the signatures can't be verified by GitHub"). Env has no secret GPG keys (0 'sec'), no ~/.ssh, no git user.signingkey, no commit.gpgsign; MUST NOT register a signing key to Oli's account (config known_blockers.signed_commits + preflight_scan.critical_filters_hard_skip.signed_commits_required). Could not produce a genuine, signed, mergeable contribution; hard-skipped per critical filter. No PR opened (honest stop, no invented work). Unlocks only if Oli registers a GPG/SSH signing key on his GitHub account.
 
 ## Mined gaps (discovered, not yet attempted)
 - none — repo is a hard blocker (signed commits) until Oli registers a signing key.
