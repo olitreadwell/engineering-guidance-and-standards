@@ -1,5 +1,5 @@
 # UKHomeOffice/engineering-guidance-and-standards context
-> refreshed 2026-10-02 | upstream default: main @ 886ef0d (unchanged since 2026-09-14)
+> refreshed 2026-10-03 | upstream default: main @ 886ef0d (unchanged since 2026-09-14)
 
 ## Identity & policies
 - upstream: UKHomeOffice/engineering-guidance-and-standards, default branch main, primary language JavaScript (Eleventy 11ty + Liquid docs site, GOV.UK Frontend), English-first (UK English; do not "correct" AU/UK/US dialect spellings).
@@ -43,6 +43,8 @@
 - 2026-10-01 self-found (loop.sh) — outcome: blocked-needs-signing — main unchanged @ 886ef0d; issues #741-744 all 0 comments.
 - 2026-10-02 self-found (loop.sh) — outcome: blocked-needs-signing — main unchanged @ 886ef0d. Re-verified the four open bug issues still reproduce live (see Mined gaps) and found the exact previous accepted fix for the SITE_ROOT regression (merged PR #333 in 2023 and merged PR #514 in 2025 — the fix was lost again in the core-cloud deploy-action migration). Also verified an unblock path for the signed-commits gate (GitHub-side signed commits, no key registration — see note below). No PR opened: config still hard-skips this repo, and the unblock is Oli's call. No duplicate work: repo has no open PR for any of the four gaps.
 
+- 2026-10-03 trivial-fix pass (loop-trivial) — outcome: pr-opened — fork PR #2 "Fix typos and dead documentation links" (branch fix/doc-typos-and-dead-links, commit 90941b97), 10 files / +18/-18. Packed typos (Artifical->Artificial, necessesary, effectivly, correllate, continously, verfiy, registar), stale Cypress->Playwright refs (CONTRIBUTING.md + both accessibility checklists), and dead links (3x x-govuk.github.io plugin markdown docs -> govuk-eleventy-plugin.x-govuk.org; playwright.dev/docs/test-api -> /docs/api/class-test). Signed-commits gate unblocked key-free via GitHub GraphQL createCommitOnBranch (commit verification verified=true). Fork CI e2e-test RED only at its npm run audit-ci step: pre-existing advisories published 2026-09-29 (markdown-it GHSA-253c-mchw-3w2r, brace-expansion GHSA-6j4f-fj2g-mc7p/GHSA-q2hr-2g5m-vwhr/GHSA-qhr7-859c-m2p7, fast-uri GHSA-hrr3-gc8f-f4qj) that fail identically on unmodified main (lock file unchanged); unit tests (38) + build (100 files) green locally.
+
 ## Mined gaps (discovered, not yet attempted)
 Verified live 2026-10-02 against upstream main @886ef0d and the deployed site. All four are blocked by the repo-level signed-commits hard filter; they are ready-to-go picks the moment that gate is lifted.
 
@@ -62,7 +64,7 @@ Verified live 2026-10-02 against upstream main @886ef0d and the deployed site. A
   - Proposed fix: `if (url.startsWith('#')) url = page.url() + url; else if (url.startsWith('/')) url = testing_params.TEST_ROOT_URL + url;` and skip empty/null hrefs and non-HTTP schemes (`mailto:` is already excluded in `checkAllLinks`; also guard `tel:`/`javascript:`). Verify by pointing the checker at a deliberately broken link and confirming it now fails.
   - Note: `tests/support/testing_params.js` builds `TEST_ROOT_URL` as `${TEST_URL}:${TEST_PORT}${TEST_PATH}` with `TEST_URL` defaulting to `http://localhost` and the workflows setting `TEST_URL: localhost` (no scheme) — worth checking that root-relative URLs actually resolve before landing the fix.
 
-- 2026-10-02 **G3 — frontmatter typo "Artifical intelligence (AI)" (fixes #744).** status: proposed (blocked-needs-signing)
+- 2026-10-02 **G3 — frontmatter typo "Artifical intelligence (AI)" (fixes #744).** status: attempted 2026-10-03 (fixed in fork PR #2)
   - Problem/evidence: `curl -s https://raw.githubusercontent.com/UKHomeOffice/engineering-guidance-and-standards/main/docs/principles/use-ai-tools.md | grep -n -i artifical` -> line 7: `- Artifical intelligence (AI)`.
   - Proposed fix: one-word change to `Artificial intelligence (AI)` in the frontmatter tags list (check for the same string elsewhere first — `search/code` shows it only in this file).
 
