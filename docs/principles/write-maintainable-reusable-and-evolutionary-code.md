@@ -18,7 +18,7 @@ When writing code, keep in mind that this should be clean, reusable and descript
 
 Writing code takes time and effort. Code is read more than it is modified, and modified more than it is written. It is worth spending more time and effort to write code that it is easier to understand and to extend with new functionality. 
 
-Reusing existing code saves considerable development time and effort at the cost of additional complexity. Writing code that is understandable and modular minimises this complexity so that code can be more effectivly reused. Writing code that is easy to modify allows this complexity to only be added when it is useful.
+Reusing existing code saves considerable development time and effort at the cost of additional complexity. Writing code that is understandable and modular minimises this complexity so that code can be more effectively reused. Writing code that is easy to modify allows this complexity to only be added when it is useful.
 
 ---
 
