@@ -106,7 +106,7 @@ The Home Office accessibility team have published guidance on [how to write in a
 
 Complexity is confusing, overwhelming and can waste time. [People with specialist knowledge prefer clear content](https://gds.blog.gov.uk/2014/02/17/guest-post-clarity-is-king-the-evidence-that-reveals-the-desperate-need-to-re-think-the-way-we-write/). Using plain English and carefully structuring your documentation will reduce the cogitive load required to understand your documentation.
 
-Not all complexity can be avoided. If you're producing documentation then there is likely some necessesary complexity arising from the subject of the document. The goal is to ensure that the writing style and structure of the document aid the reader in understanding the subject.
+Not all complexity can be avoided. If you're producing documentation then there is likely some necessary complexity arising from the subject of the document. The goal is to ensure that the writing style and structure of the document aid the reader in understanding the subject.
 
 Follow the [GOV.UK guidance on how to write well for your audience, including specialists](https://www.gov.uk/guidance/content-design/writing-for-gov-uk), and pay particular attention to the below.
 
