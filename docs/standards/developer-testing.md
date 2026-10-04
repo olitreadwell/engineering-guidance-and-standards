@@ -27,7 +27,7 @@ A good test should be clear on the intent of the test, have one test case, be re
 Testing can come in different forms, for example unit/integration/mutation/property based, but all must adhere to the requirements as the following benefits can be achieved:
 
 - Easy to correct failures in code from failed tests
-- Security & confidence when continously integrating code
+- Security & confidence when continuously integrating code
 - Easy to understand intent and functionality of code
 - Tests are owned by the same team who owns the code and not within a silo external to the team
 

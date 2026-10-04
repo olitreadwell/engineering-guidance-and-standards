@@ -25,14 +25,14 @@ Developed with assistance from Copilot
 
 ## Requirement(s)
 
-- [AI‑assisted outputs MUST be reviewed and approved by a human before reaching production](#aiassisted-outputs-must-be-reviewed-and-approved-by-a-human-before-reaching-production)
-- [AI‑assisted changes MUST be traceable through engineering processes](#aiassisted-changes-must-be-traceable-through-engineering-processes)
+- [AI‑assisted outputs MUST be reviewed and approved by a human before reaching production](#ai-assisted-outputs-must-be-reviewed-and-approved-by-a-human-before-reaching-production)
+- [AI‑assisted changes MUST be traceable through engineering processes](#ai-assisted-changes-must-be-traceable-through-engineering-processes)
 - [You MUST test your code](#you-must-test-your-code)
 - [You MUST follow the guardrails](#you-must-follow-the-guardrails)
 - [You MUST plan for the worst](#you-must-plan-for-the-worst)
 - [You MUST ensure that sensitive, personal, classified, or otherwise restricted data is not exposed to AI tools unless explicitly approved](#you-must-ensure-that-sensitive-personal-classified-or-otherwise-restricted-data-is-not-exposed-to-ai-tools-unless-explicitly-approved)
-- [AI‑assisted code MUST meet the same security expectations as human‑written code](#aiassisted-code-must-meet-the-same-security-expectations-as-humanwritten-code)
-- [You MUST understand and manage the risks of AI‑introduced dependencies, libraries, or code patterns](#you-must-understand-and-manage-the-risks-of-aiintroduced-dependencies-libraries-or-code-patterns)
+- [AI‑assisted code MUST meet the same security expectations as human‑written code](#ai-assisted-code-must-meet-the-same-security-expectations-as-human-written-code)
+- [You MUST understand and manage the risks of AI‑introduced dependencies, libraries, or code patterns](#you-must-understand-and-manage-the-risks-of-ai-introduced-dependencies-libraries-or-code-patterns)
 - [AI usage MUST evolve in line with updated guidance, standards, and organisational guardrails](#ai-usage-must-evolve-in-line-with-updated-guidance-standards-and-organisational-guardrails)
 - [You MUST only use approved tools](#you-must-only-use-approved-tools)
 

@@ -86,6 +86,6 @@ Rate limiting is important to secure your API and consumers may want to query yo
 
 Documentation is important, especially if you have downstream consumers of your API. This documentation should include a list of changes between versions and ways to migrate to the next version.
 
-If releasing a version with depreciated properties or breaking changes, this should be clearly documented and, if possible include any updated endpoints/parameters etc.
+If releasing a version with deprecated properties or breaking changes, this should be clearly documented and, if possible include any updated endpoints/parameters etc.
 
 ---
