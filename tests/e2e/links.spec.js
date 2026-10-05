@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { testing_params } from '../support/testing_params';
+import { resolveLinkUrl } from '../support/resolveLinkUrl';
 import { readFileSync } from 'fs';
 
 const data_pages = readFileSync('./_site/search-index.json', 'utf8');
@@ -46,7 +47,7 @@ function isPermalink(url) {
 
 async function checkUrl(url, page) {
   console.log('checking: ', url);
-  if (linkExceptionList.includes(url) || isPermalink(url)) {
+  if (!url || linkExceptionList.includes(url) || isPermalink(url)) {
     console.log('excluded: ', url);
     return;
   }
@@ -54,14 +55,13 @@ async function checkUrl(url, page) {
     return;
   }
   visitedLinks.push(url);
-  // Adjust URL for in-page anchors and root path
-  // Playwright's request API needs full URLs
-  if (url.startsWith('#')) {
-    url = `${page.url()}${url}`;
+  // Playwright's request API needs full URLs, so resolve the href against the
+  // page it was found on or the site root before requesting it.
+  const targetUrl = resolveLinkUrl(url, page.url(), testing_params.TEST_ROOT_URL);
+  if (!targetUrl) {
+    console.log('excluded (not an http(s) URL): ', url);
+    return;
   }
-  if (url.match('/')) {
-    url = page.url();
-  }
-  const response = await page.request.get(url);
+  const response = await page.request.get(targetUrl);
   expect(response.status()).toBeLessThan(400);
 }
