@@ -17,10 +17,10 @@ Ensuring clean and clear naming in low-code workflow tools helps provide structu
 
 - [Naming conventions MUST be consistent](#naming-conventions-must-be-consistent)
 - [Acronyms or uncommon abbreviations MUST be defined in a central or project glossary](#acronyms-or-uncommon-abbreviations-must-be-defined-in-a-central-or-project-glossary)
-- [Workflow, action step and scope block names MUST be descriptive and convey the purpose or objective](#workflow%2C-action-step-and-scope-block-names-must-be-descriptive-and-convey-the-purpose-or-objective)
-- [Workflow, action step and scope block names MUST begin with a verb to describe the function, followed by the subject of the verb](#workflow%2C-action-step-and-scope-block-names-must-begin-with-a-verb-to-describe-the-function%2C-followed-by-the-subject-of-the-verb)
+- [Workflow, action step and scope block names MUST be descriptive and convey the purpose or objective](#workflow-action-step-and-scope-block-names-must-be-descriptive-and-convey-the-purpose-or-objective)
+- [Workflow, action step and scope block names MUST begin with a verb to describe the function, followed by the subject of the verb](#workflow-action-step-and-scope-block-names-must-begin-with-a-verb-to-describe-the-function-followed-by-the-subject-of-the-verb)
 - [Words in a workflow name MUST be separated by a space where possible](#words-in-a-workflow-name-must-be-separated-by-a-space-where-possible)
-- [Scope blocks that are used for error handling MUST be prefixed with the word 'Try' or 'Catch'](#scope-blocks-that-are-used-for-error-handling-must-be-prefixed-with-the-word-%E2%80%98try%E2%80%99-or-%E2%80%98catch%E2%80%99)
+- [Scope blocks that are used for error handling MUST be prefixed with the word 'Try' or 'Catch'](#scope-blocks-that-are-used-for-error-handling-must-be-prefixed-with-the-word-try-or-catch)
 
 ### Naming conventions MUST be consistent
 
