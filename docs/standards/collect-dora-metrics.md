@@ -20,9 +20,9 @@ Collecting metrics is an important part of any project, metrics can be the first
 ## Requirements
 
 - [You MUST collect these metrics](#you-must-collect-these-metrics)
-- [You MUST continuously monitor these metrics over time](#You-must-continuously-monitor-these-metrics-over-time)
+- [You MUST continuously monitor these metrics over time](#you-must-continuously-monitor-these-metrics-over-time)
 - [You MUST understand what these metrics mean for your team](#you-must-understand-what-these-metrics-mean-for-your-team)
-- [You MUST have an action plan/procedure to improve metrics when they drop](#you-must-have-an-action-planprocedure-to-improve-metrics-when-they-drop)
+- [You MUST have an action plan/procedure to improve metrics when they drop](#you-must-have-an-action-plan-procedure-to-improve-metrics-when-they-drop)
 
 ### You MUST collect these metrics
 
@@ -45,7 +45,7 @@ We must then make these metrics accessible to whoever is appropriate to view the
 
 ### You MUST understand what these metrics mean for your team
 
-The DORA metrics come from research that indicates that these metrics correllate with team performance. To utilise these well in your own team you need to understand what is contributing negatively or positively to these metrics in context.
+The DORA metrics come from research that indicates that these metrics correlate with team performance. To utilise these well in your own team you need to understand what is contributing negatively or positively to these metrics in context.
 
 For example, if your deployment frequency is low, can you split large features into smaller deployable changes using feature flags? Adopting a principle like "[Deploy Little and Often](https://engineering.homeoffice.gov.uk/principles/deploy-little-and-often/)", are you also keeping your dependencies up to date?
 
