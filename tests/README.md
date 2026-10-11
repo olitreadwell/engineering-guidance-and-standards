@@ -15,13 +15,13 @@
 
 ```
 npm ci
-npx playwright install --with-deps // This install the browser dependency 
+npx playwright install --with-deps # This installs the browser dependency
 ```
 
 ### How to Add New Tests
 
 - Add new test files to `tests/e2e/`.
-- Use Playwright's [test API](https://playwright.dev/docs/test-api) and best practices for writing tests.
+- Use Playwright's [test API](https://playwright.dev/docs/api/class-test) and best practices for writing tests.
 - Example test file:
 
 ```js
@@ -107,7 +107,7 @@ The test suite includes:
 
 ### More Resources
 - [Playwright Documentation](https://playwright.dev/docs/intro)
-- [Playwright Test API](https://playwright.dev/docs/test-api)
+- [Playwright Test API](https://playwright.dev/docs/api/class-test)
 - [Playwright CLI](https://playwright.dev/docs/test-cli)
 
 ### How to migrate from Cypress to playwright 

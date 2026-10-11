@@ -24,7 +24,7 @@ related: # remove this section if you do not need related links on your page
 
 # Notes on line breaks
 
-Please see https://x-govuk.github.io/govuk-eleventy-plugin/markdown/#line-breaks for notes on usage of line breaks.
+Please see https://govuk-eleventy-plugin.x-govuk.org/example/markdown/#paragraphs-and-line-breaks for notes on usage of line breaks.
 
 # Notes on linking to headings within a page
 

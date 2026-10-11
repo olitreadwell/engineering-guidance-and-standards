@@ -28,7 +28,7 @@ If applicable, add screenshots to help explain your problem.
  - Browser [e.g. Chrome, Safari]
  - Version [e.g. 22]
 
-**Any assistance technologies used**
+**Any assistive technologies used**
 - Screen reader: [e.g. VoiceOver, JAWS, etc.]
 - Navigation method: [Mouse, keyboard, speech recognition, etc.]
 
