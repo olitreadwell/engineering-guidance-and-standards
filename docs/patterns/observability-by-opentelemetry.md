@@ -18,7 +18,7 @@ related:
           href: /standards/service-reliability/
         - text: Monitor and measure proactively
           href: /principles/monitor-and-measure/
-        - text: OpenTelementry
+        - text: OpenTelemetry
           href: https://opentelemetry.io/
 ---
 
