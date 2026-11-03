@@ -37,10 +37,10 @@
     "audit-ci": "npx audit-ci@^7 --config ./audit-ci.jsonc"
   },
   "engines": {
-    "node": ">=22.0.0 <23.0.0"
+    "node": ">=22.23.4 <23.0.0"
   },
   "dependencies": {
-    "@11ty/eleventy": "3.1.6",
+    "@11ty/eleventy": "3.1.7",
     "@x-govuk/govuk-eleventy-plugin": "9.0.2",
     "gray-matter": "4.0.3",
     "luxon": "3.7.2",
@@ -48,11 +48,15 @@
     "parse5": "8.0.1"
   },
   "devDependencies": {
-    "@axe-core/playwright": "4.13.0",
+    "@axe-core/playwright": "4.14.0",
     "@cfworker/json-schema": "4.1.1",
-    "@playwright/test": "^1.63.0",
+    "@playwright/test": "^1.64.1",
     "audit-ci": "^7.1.0",
-    "axe-core": "4.13.0",
-    "playwright-ctrf-json-reporter": "^0.0.29"
+    "axe-core": "4.14.0",
+    "playwright-ctrf-json-reporter": "^0.2.0"
+  },
+  "overrides": {
+    "chokidar": "^4.0.3",
+    "argparse": "^2.0.1"
   }
 }
