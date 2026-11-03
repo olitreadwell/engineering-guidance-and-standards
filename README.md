@@ -57,7 +57,7 @@ Now you can preview the site on http://localhost:8080
 
 Look at readme for [running tests](./tests/README.md)
 
-NOTE: the cypressIO tests are replaced with playwright due to the tool being deprecated on Tech registar
+NOTE: the cypressIO tests are replaced with playwright due to the tool being deprecated on Tech register
 
 > **Note**
 > The site must be running on localhost for the tests to work. See [Preview your changes locally](#preview-your-changes-locally).

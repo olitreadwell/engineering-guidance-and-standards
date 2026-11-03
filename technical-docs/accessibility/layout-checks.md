@@ -5,7 +5,7 @@ checked as part of the review process.
 
 ## Automated checks
 
-[The accessibility cypress tests](../../cypress/e2e/a11y.spec.cy.js) will run 
+[The accessibility Playwright tests](../../tests/e2e/a11y.spec.js) will run
 [axe-core](https://github.com/dequelabs/axe-core) tests against each page in the site. This will check for issues like:
 - The html is valid, and has a defined language.
 - The page's content is contained in landmark regions, and these regions have unique roles.

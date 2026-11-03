@@ -70,7 +70,7 @@ Sometimes logging is used for fast-feedback loops when prototyping application f
 
 Consider removing logging statements that do not produce value. Often logging is provided to increase confidence in an application's correctness, or to provide data points around edge cases of validation and data processing. Most of these cases can be replaced with unit or integration testing instead, as appropriate.
 
-For cases in which lack of confidence is caused by the data domain being broad and edge cases being unforseeable, consider using property-based testing with tooling such as QuickCheck derivatives.
+For cases in which lack of confidence is caused by the data domain being broad and edge cases being unforeseeable, consider using property-based testing with tooling such as QuickCheck derivatives.
 
 ### Logging lifecycle
 

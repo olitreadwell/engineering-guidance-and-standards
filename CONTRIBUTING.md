@@ -96,7 +96,7 @@ Congratulations, your contribution is now merged into the project and you have i
 
 ### E2E Tests
 
-Currently we are using Cypress to do end to end tests. As this is a static site, these are lightweight and check that any changes continue to build front page links correctly.
+Currently we are using Playwright to do end to end tests. As this is a static site, these are lightweight and check that any changes continue to build front page links correctly.
 
 Please add to these where you feel necessary.
 
@@ -112,7 +112,7 @@ We are using [GitHub workflows](https://github.com/UKHomeOffice/engineering-guid
 
 The following actions are performed for each PR before merging:
 
-- Automated end to end testing using Cypress
+- Automated end to end testing using Playwright
 
 PRs must only be approved after they pass the above checks.
 

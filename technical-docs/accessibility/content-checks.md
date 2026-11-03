@@ -5,10 +5,10 @@ review process.
 
 ## Automated checks
 
-Most content checks are context specific and can't be assessed by automated tools. [The accessibility cypress tests](
-../../cypress/e2e/a11y.spec.cy.js) will run [axe-core](https://github.com/dequelabs/axe-core) tests against each page
+Most content checks are context specific and can't be assessed by automated tools. [The accessibility Playwright tests](
+../../tests/e2e/a11y.spec.js) will run [axe-core](https://github.com/dequelabs/axe-core) tests against each page
 in the site. This will check for issues like empty links, skipped heading levels. As part of checking every page it will
-also verfiy that page titles are not repeated on multiple pages.
+also verify that page titles are not repeated on multiple pages.
 
 ## Manual checks
 
@@ -24,9 +24,9 @@ Read through the page content. This is best done by checking out the repository 
 - [ ] Where there is a list of things, an ordered list, unordered list, or definition list is used as appropriate. 
   Tabular data is displayed in a table. The markdown syntax for these can be found in the Gov.uk eleventy plugin
   documentation:
-    - [Ordered and unordered lists](https://x-govuk.github.io/govuk-eleventy-plugin/markdown/#lists)
-    - [Definition lists](https://x-govuk.github.io/govuk-eleventy-plugin/markdown-advanced/#definition-lists)
-    - [Tables](https://x-govuk.github.io/govuk-eleventy-plugin/markdown-advanced/#tables)
+    - [Ordered and unordered lists](https://govuk-eleventy-plugin.x-govuk.org/example/markdown/#lists)
+    - [Definition lists](https://govuk-eleventy-plugin.x-govuk.org/example/markdown/#description-lists)
+    - [Tables](https://govuk-eleventy-plugin.x-govuk.org/example/markdown/#tables)
 - [ ] If any video or audio has been embedded in the page, these should have transcripts or captions, and should not 
   automatically play when a user accesses the page.
 
