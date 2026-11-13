@@ -40,17 +40,17 @@
     "node": ">=22.23.4 <23.0.0"
   },
   "dependencies": {
-    "@11ty/eleventy": "3.1.7",
+    "@11ty/eleventy": "3.1.8",
     "@x-govuk/govuk-eleventy-plugin": "9.0.2",
     "gray-matter": "4.0.3",
     "luxon": "3.7.2",
     "node-fetch": "^3.3.2",
-    "parse5": "8.0.1"
+    "parse5": "8.1.1"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",
     "@cfworker/json-schema": "4.1.6",
-    "@playwright/test": "^1.64.1",
+    "@playwright/test": "^1.65.0",
     "audit-ci": "^7.1.0",
     "axe-core": "4.14.0",
     "playwright-ctrf-json-reporter": "^0.2.0"
